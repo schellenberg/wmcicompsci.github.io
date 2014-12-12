@@ -3,7 +3,29 @@ body {
 	background-color: #ffcf73;
 }
 
+h1 {
+	padding: 30px;
+	border-style: dashed;
+	text-align: center;
+}
+
+#cage {
+	padding: 80px;
+	border-style: dotted;
+	border-width: 5px;
+}
+
+.pullquote {
+	padding-left: 100px;
+	font-size: 1.5em;
+	background: yellow;
+}
+
 p {
 	color: #3515b0;
 	background-color: #5dcec6;
+	font-family: "Times New Roman", serif;
+	margin: 20px;
+	padding-left: 40px;
+	padding-bottom: 10px;
 }
