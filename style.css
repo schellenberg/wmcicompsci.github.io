@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-	padding: 30px;
+	padding: 10px;
 	border-style: dashed;
 	text-align: center;
 }
@@ -12,7 +12,8 @@ h1 {
 #cage {
 	padding: 80px;
 	border-style: dotted;
-	border-width: 5px;
+	border-width: 20px;
+	margin-left: 40%;
 }
 
 .pullquote {
