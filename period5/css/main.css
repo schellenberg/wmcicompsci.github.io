@@ -1,0 +1,20 @@
+p {
+	color: #552700;
+}
+
+body {
+	font-size: 1.5em;
+	background-color: #86C98A;
+}
+
+h1 {
+	color: #061539;
+	text-align: center;
+	border-style: dashed;
+	border-width: 4px;
+	margin-left: 75px;
+	margin-right: 75px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #7887AB;
+}
