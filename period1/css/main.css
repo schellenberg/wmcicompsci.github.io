@@ -1,0 +1,16 @@
+
+body {
+	font-size: 1em;
+	background-color: #6B75BE;
+}
+
+h1 {
+	background-color: #E08C2A;
+	text-align: center;
+	border: 5px;
+	border-style: dashed;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
