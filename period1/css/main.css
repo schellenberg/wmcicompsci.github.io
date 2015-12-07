@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+	font-family: 'Indie Flower', cursive;
 	background-color: #E08C2A;
 	text-align: center;
 	border: 5px;
@@ -13,4 +14,15 @@ h1 {
 	margin-right: 100px;
 	padding-bottom: 50px;
 	padding-top: 50px;
+}
+
+#mainContent {
+	margin-left: 75px;
+	margin-right: 75px;	
+}
+
+.centerMe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
