@@ -60,11 +60,18 @@ h1 {
 	margin-right: auto;
 }
 
+.imgRight {
+	float: right;
+	padding: 15px;
+	max-width: 30%;
+	transform: rotate(45deg);
+}
+
 img {
 		max-width: 100%;
 		height: auto;
 		padding-bottom: 50px;
-	}
+}
 
 
 @media screen and (max-width: 600px) {
