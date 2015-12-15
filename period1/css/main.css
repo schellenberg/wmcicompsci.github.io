@@ -59,6 +59,23 @@ nav ul li a:hover {
 	color: #fff;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.imgLeft {
+	float: left;
+	padding: 25px;
+	max-width: 50%;
+}
+
+.imgRight {
+	float: right;
+	padding: 25px;
+	max-width: 50%;
+}
+
 @media screen and (max-width: 600px) {
 	nav ul {
 		list-style-type: none;
