@@ -46,7 +46,7 @@ nav ul li a {
 	padding-left: 16px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-
+	transition: 1s;
 }
 
 nav ul li a:hover {
@@ -75,6 +75,8 @@ img {
 	padding: 25px;
 	max-width: 50%;
 }
+
+
 
 @media screen and (max-width: 600px) {
 	nav ul {
