@@ -2,7 +2,27 @@ p {
 	color: red;
 }
 
+.centerMe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 strong {
 	font-size: 24px;
 	color: green;
+}
+
+h1 {
+	padding: 50px;
+	margin: 70px;
+	border-style: dashed;
+	border-width: 5px;
+	text-align: center;
+}
+
+body {
+	background-color: #4f9139;
+	margin-left: 5%;
+	margin-right: 5%;
 }
