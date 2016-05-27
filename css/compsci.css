@@ -13,7 +13,7 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block;
+  display: fixed;
   padding: 8px;
   text-decoration: none;
   background-color: #dddddd;
