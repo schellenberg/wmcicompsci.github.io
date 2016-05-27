@@ -2,27 +2,24 @@ p {
 	color: red;
 }
 
-.centerMe {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-strong {
-	font-size: 24px;
-	color: green;
+nav ul li {
+  float: left;
 }
 
-h1 {
-	padding: 50px;
-	margin: 70px;
-	border-style: dashed;
-	border-width: 5px;
-	text-align: center;
+nav ul li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
 }
 
-body {
-	background-color: #4f9139;
-	margin-left: 5%;
-	margin-right: 5%;
+nav ul li a:hover {
+  background-color: purple;
+  color: white;
 }
