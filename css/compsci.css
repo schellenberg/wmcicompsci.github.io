@@ -3,9 +3,14 @@ p {
 }
 
 nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #dddddd;
 }
 
 nav ul li {
@@ -13,7 +18,7 @@ nav ul li {
 }
 
 nav ul li a {
-  display: fixed;
+  display: block;
   padding: 8px;
   text-decoration: none;
   background-color: #dddddd;
