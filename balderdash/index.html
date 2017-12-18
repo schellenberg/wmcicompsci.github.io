@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Balderdash</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="starter-template">
+		  
+	      <h1>Balderdash</h1>
+	
+		  <dl id="wordList">
+		
+		  </dl>
+		
+		<div id="roll"> 
+		</div>
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button type="button" id="resetWords" class="btn btn-primary">Draw New Card</button>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<script>
+	var a = document.getElementById("resetWords");
+	a.onclick = function() {
+	  var flickerAPI = "http://wmcicompsci.ca/balderdash/json";
+	  $.getJSON( flickerAPI)
+	    .done(function( data ) {
+			var i = 0;
+			var roll = "";
+			$("dl").empty();
+	      $.each( data, function( word, defn ) {
+			  if (i === 0) {
+				  roll = defn;
+			  }
+			  else {
+				  if (i == roll) {
+				  	$("<dt class='highlight'>"+word+"</dt> <dd class='highlight'>"+ defn + " </dt>").appendTo( "#wordList" );
+				  }
+				  else {
+	     		 	 $("<dt>"+word+"</dt> <dd>"+ defn + " </dt>").appendTo( "#wordList" );
+			 	  }
+			 }
+			 i++;
+	      });
+		  $("#roll").empty();
+		  if (roll == 6) {
+		  	$("<p>You rolled a " + roll + ". <strong>Pick whichever word you want!</strong></p>").appendTo("#roll");
+		  }
+		  else {
+		  	$("<p>You rolled a " + roll + ".</p>").appendTo("#roll");
+		  }
+	    });
+	};
+	</script>
+	
+	<script>
+	  $( document ).ready(a.onclick() );
+	  </script>
+	
+	
+  </body>
+</html>
+
