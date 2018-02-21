@@ -731,9 +731,18 @@ pre {
 }
 </style><title>boolean_algebra</title></head><body><article class="markdown-body">
 <h1>
-<a id="user-content-boolean-algebra" class="anchor" href="#boolean-algebra" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boolean Algebra</h1>
+<a id="user-content-acsl---contest-3-preparation" class="anchor" href="#acsl---contest-3-preparation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACSL - Contest 3 Preparation</h1>
+
+<p>You may want to look at <a href="https://app.box.com/s/ckpm715z9mbc8uj9w13f">previous problems from old ACSL contests</a> while you are learning the topics below. I find it helpful to test my understanding by trying an old problem while I'm learning something new!</p>
+
 <h2>
-<a id="user-content-order-of-operations" class="anchor" href="#order-of-operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Order of Operations</h2>
+<a id="user-content-boolean-algebra" class="anchor" href="#boolean-algebra" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boolean Algebra</h2>
+<h3>
+<a id="user-content-boolean-algebra-tutorial-video" class="anchor" href="#boolean-algebra-tutorial-video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boolean Algebra Tutorial Video</h3>
+<p><a href="https://www.youtube.com/watch?v=jDnni-zm2g8" rel="nofollow">General Boolean Algebra Tutorial</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jDnni-zm2g8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h3>
+<a id="user-content-order-of-operations" class="anchor" href="#order-of-operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Order of Operations</h3>
 <ul>
 <li><code>NOT</code></li>
 <li>
@@ -747,8 +756,8 @@ pre {
 </li>
 <li>if same precedence, evaluate from left to right</li>
 </ul>
-<h2>
-<a id="user-content-boolean-algebra-identities" class="anchor" href="#boolean-algebra-identities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boolean Algebra Identities</h2>
+<h3>
+<a id="user-content-boolean-algebra-identities" class="anchor" href="#boolean-algebra-identities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Boolean Algebra Identities</h3>
 <ol>
 <li>$ A + B = B + A $</li>
 <li>$ A * B = B * A $</li>
@@ -773,4 +782,69 @@ pre {
 <li>$ A \oplus B = A * \overline{B} + \overline{A} * B $</li>
 <li>$ \overline{A \oplus B} = \overline{A} \oplus B = A \oplus \overline{B} $</li>
 </ol>
+<h3>
+<a id="user-content-acsl-overview" class="anchor" href="#acsl-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACSL Overview</h3>
+<p>You might find it helpful to <a href="/Users/dan/Documents/GitHub/wmcicompsci.github.io/club/acsl/contest3/boolean_algebra.pdf">read the overview of boolean algebra from the ACSL</a>.</p>
+<h2>
+<a id="user-content-data-structures" class="anchor" href="#data-structures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Structures</h2>
+<h3>
+<a id="user-content-data-structures-tutorial-videos" class="anchor" href="#data-structures-tutorial-videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Structures Tutorial Videos</h3>
+<p><a href="https://www.youtube.com/watch?v=_BnbbOhyroQ&amp;index=2&amp;list=PLGq6KgRCPkA6Qb4kpiH8h0ghjpCfomATr" rel="nofollow">Construct a Binary Search Tree</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_BnbbOhyroQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=l9aMO7lgHj0&amp;index=3&amp;list=PLGq6KgRCPkA6Qb4kpiH8h0ghjpCfomATr" rel="nofollow">Internal Path Length of Binary Search Tree</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l9aMO7lgHj0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=gXj7K_petqo&amp;index=8&amp;list=PLGq6KgRCPkA6Qb4kpiH8h0ghjpCfomATr" rel="nofollow">Stacks and Queues</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gXj7K_petqo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h3>
+<a id="user-content-key-things-to-remember" class="anchor" href="#key-things-to-remember" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Key Things to Remember</h3>
+<ul>
+<li>
+<p>a <strong>stack</strong> is LIFO (<strong>L</strong>ast <strong>I</strong>n, <strong>F</strong>irst <strong>O</strong>ut)</p>
+<ul>
+<li>you can remember this as similar to a stack of books on a desk (when you add a book to the pile, it goes on the top of the pile; when you take a book off the pile, it also comes from the top of the pile)</li>
+</ul>
+</li>
+<li>
+<p>a <strong>queue</strong> is FIFO (<strong>F</strong>irst <strong>I</strong>n, <strong>F</strong>irst <strong>O</strong>ut)</p>
+<ul>
+<li>you can remember this as similar to a line up for a water fountain (when a new person is added to the line, they go to the back of the line; when a person leaves the line, they exit from the front of the line)</li>
+</ul>
+</li>
+<li>
+<p>both data structures allow you to <strong>push</strong> (add new data), and <strong>pop</strong> (remove/access data). The only difference is where you push/pop to/from.</p>
+</li>
+<li>
+<p>for a binary search tree, the first node is counted as depth 0 (similar to how we often count from the 0-th element when using arrays/lists)</p>
+</li>
+<li>
+<p>terminology:</p>
+<ul>
+<li>
+<em>root</em> is the uppermost node (at depth of 0)</li>
+<li>
+<em>leaf nodes</em> are nodes with no children</li>
+<li>
+<em>depth</em> of the tree can be found by counting the depth of the deepest node</li>
+<li>
+<em>internal path length</em> is the sum of the depth of all the nodes</li>
+<li>
+<em>external node</em> is anywhere a new node could be attached to the tree</li>
+<li>
+<em>external path length</em> is the sum of the depths of all external nodes</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-acsl-overview-1" class="anchor" href="#acsl-overview-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACSL Overview</h3>
+<p>You might find it helpful to <a href="/Users/dan/Documents/GitHub/wmcicompsci.github.io/club/acsl/contest3/data_structures.pdf">read the overview of data structures from the ACSL</a>.</p>
+<h2>
+<a id="user-content-regular-expressions" class="anchor" href="#regular-expressions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Regular Expressions</h2>
+<p>Can be used to find patterns. We can convert between an algebraic expression of the regular expression, or a FSA (Finite State Automaton) representation.</p>
+<h3>
+<a id="user-content-regular-expression-tutorial-video" class="anchor" href="#regular-expression-tutorial-video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Regular Expression Tutorial Video</h3>
+<p><a href="https://www.youtube.com/watch?v=GwsU2LPs85U" rel="nofollow">Convert Regular Expression to Finite-State Automaton</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GwsU2LPs85U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h3>
+<a id="user-content-acsl-overview-2" class="anchor" href="#acsl-overview-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACSL Overview</h3>
+<p>You might find it helpful to <a href="/Users/dan/Documents/GitHub/wmcicompsci.github.io/club/acsl/contest3/regular_expressions.pdf">read the overview of regular expressions from the ACSL</a>.</p>
 </article></body></html>
