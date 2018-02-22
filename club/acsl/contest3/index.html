@@ -206,6 +206,48 @@
     <p><a href="https://www.youtube.com/watch?v=GwsU2LPs85U" rel="nofollow">Convert Regular Expression to Finite-State Automaton</a></p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GwsU2LPs85U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+    <h3>Quick Examples</h3>
+
+    <p>Given the regular expression <code>10<sup>*</sup>1</code>, we can represent it as the following FSA:</p>
+        <img src="fsm_example.svg">
+    <p>This matches any expression that begins with a 1, has any number of 0's (including none), then ends with a 1. Some examples of this include:
+       <ul>
+          <li>11</li>
+          <li>101</li>
+          <li>1001</li>
+          <li>10001</li>
+          <li>100001</li>
+          <li>etc...</li>
+       </ul>
+    </p>
+
+    <p>Given the regular expression <code>11<sup>*</sup>01(101)<sup>*</sup>101<sup>*</sup></code>, we can represent it as the following FSA:</p>
+      <img src="fsm_example2.svg">
+    <p>This matches any expression that:
+     <ul>
+        <li>begins with a 1</li>
+        <li>followed by any number of 1's in a row (including none)</li>
+        <li>followed by a 0</li>
+        <li>followed by a 1</li>
+        <li>followed by any number of 101's in a row (including none)</li>
+        <li>followed by a 1</li>
+        <li>followed by a 0</li>
+        <li>followed by any number of 1's in a row (including none)</li>
+     </ul>
+    </p>
+
+    <p>
+      A few examples of expressions that would match this include:
+       <ul>
+          <li>10110</li>
+          <li>1111110110110111</li>
+          <li>11110110</li>
+          <li>1011011011011</li>
+          <li>etc...</li>
+       </ul>
+    </p>
+
+
     <h3>ACSL Overview</h3>
     <p>You might find it helpful to <a href="regular_expressions.pdf">read the overview of regular expressions from the ACSL</a>.</p>
 
