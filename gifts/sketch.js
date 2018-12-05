@@ -4,6 +4,11 @@
 
 let giftInput, lookupButton, result;
 let giftIDs;
+let giftData;
+
+function preload() {
+  giftData = loadStrings("assets/2018.txt");
+}
 
 function setup() {
   giftInput = createInput("");
@@ -23,7 +28,6 @@ function setup() {
   result = createElement("h2");
   result.parent("container");
 
-  giftIDs = new Map();
   setGiftIDs();
 }
 
@@ -32,20 +36,12 @@ function draw() {
 }
 
 function setGiftIDs() {
-  giftIDs.set(927, "Zoe");
-  giftIDs.set(301, "Zoe");
-  giftIDs.set(693, "Zoe");
+  giftIDs = new Map();
 
-  giftIDs.set(562, "Eli");
-  giftIDs.set(426, "Eli");
-  giftIDs.set(369, "Eli");
-
-  giftIDs.set(166, "Bree");
-  giftIDs.set(631, "Bree");
-  giftIDs.set(983, "Bree");
-
-  giftIDs.set(810, "Whole Family!");
-  giftIDs.set(385, "Whole Family!");
+  for (let line=0; line<giftData.length; line++) {
+    let currentGiftInfo = giftData[line].split(",");
+    giftIDs.set(Number(currentGiftInfo[0]), currentGiftInfo[1]);
+  }
 }
 
 function checkIDs() {
