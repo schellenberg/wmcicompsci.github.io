@@ -9,6 +9,8 @@ function setup() {
   giftInput = createInput("");
   giftInput.attribute("placeholder", "Enter gift number here...");
   giftInput.attribute("class", "form-control");
+  giftInput.attribute("type", "number");
+  giftInput.attribute("pattern", "[0-9]*");
   giftInput.parent("gifts");
 
   lookupButton = createButton("Whose Is It?");
