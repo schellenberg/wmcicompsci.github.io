@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            menuSettings: {
+                zoom: "Click",
+                zscale: "400%",
+            },
+        });
+      </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <title>Solution</title>
+</head>
+<body>
+    <h1>19.</h1>
+
+    <p>
+        <!-- % MathType!MTEF!2!1!+-
+        % feaagKart1ev2aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+        % hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+        % 4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq-Jc9
+        % vqaqpepm0xbba9pwe9Q8fs0-yqaqpepae9pg0FirpepeKkFr0xfr-x
+        % fr-xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGceaqabeaacaWGMb
+        % WaaeWaaeaacaWG4baacaGLOaGaayzkaaGaeyypa0JaeyOeI0IaamiE
+        % amaaCaaaleqabaGaaGOmaaaakmaabmaabaGaamiEamaaCaaaleqaba
+        % GaaGOmaaaakiabgUcaRiaaisdacaWG4baacaGLOaGaayzkaaWaaeWa
+        % aeaacaaIZaGaamiEaiabgkHiTiaaikdaaiaawIcacaGLPaaacaGG7a
+        % GaaGPaVlaaykW7caaMc8UaaGPaVlaadIhacqGH9aqpcqGHsislcaaI
+        % XaaabaaabaGaamOzaiaacEcadaqadaqaaiaadIhaaiaawIcacaGLPa
+        % aacqGH9aqpdaqadaqaaiabgkHiTiaaikdacaWG4baacaGLOaGaayzk
+        % aaWaaeWaaeaacaWG4bWaaWbaaSqabeaacaaIYaaaaOGaey4kaSIaaG
+        % inaiaadIhaaiaawIcacaGLPaaadaqadaqaaiaaiodacaWG4bGaeyOe
+        % I0IaaGOmaaGaayjkaiaawMcaaiabgUcaRmaabmaabaGaeyOeI0Iaam
+        % iEamaaCaaaleqabaGaaGOmaaaaaOGaayjkaiaawMcaamaabmaabaGa
+        % aGOmaiaadIhacqGHRaWkcaaI0aaacaGLOaGaayzkaaWaaeWaaeaaca
+        % aIZaGaamiEaiabgkHiTiaaikdaaiaawIcacaGLPaaacqGHRaWkdaqa
+        % daqaaiabgkHiTiaadIhadaahaaWcbeqaaiaaikdaaaaakiaawIcaca
+        % GLPaaadaqadaqaaiaadIhadaahaaWcbeqaaiaaikdaaaGccqGHRaWk
+        % caaI0aGaamiEaaGaayjkaiaawMcaamaabmaabaGaaG4maaGaayjkai
+        % aawMcaaaqaaaqaaiaadAgacaGGNaWaaeWaaeaacqGHsislcaaIXaaa
+        % caGLOaGaayzkaaGaeyypa0ZaaeWaaeaacqGHsislcaaIYaWaaeWaaa
+        % bbOpaaaaaasvgza8qabaGaeyOeI0IaaGymaaWdaiaawIcacaGLPaaa
+        % aiaawIcacaGLPaaadaqadaqaamaabmaapeqaaiabgkHiTiaaigdaa8
+        % aacaGLOaGaayzkaaWaaWbaaSqabeaacaaIYaaaaOGaey4kaSIaaGin
+        % amaabmaapeqaaiabgkHiTiaaigdaa8aacaGLOaGaayzkaaaacaGLOa
+        % GaayzkaaWaaeWaaeaacaaIZaWaaeWaa8qabaGaeyOeI0IaaGymaaWd
+        % aiaawIcacaGLPaaacqGHsislcaaIYaaacaGLOaGaayzkaaGaey4kaS
+        % YaaeWaaeaacqGHsisldaqadaWdbeaacqGHsislcaaIXaaapaGaayjk
+        % aiaawMcaamaaCaaaleqabaGaaGOmaaaaaOGaayjkaiaawMcaamaabm
+        % aabaGaaGOmamaabmaapeqaaiabgkHiTiaaigdaa8aacaGLOaGaayzk
+        % aaGaey4kaSIaaGinaaGaayjkaiaawMcaamaabmaabaGaaG4mamaabm
+        % aapeqaaiabgkHiTiaaigdaa8aacaGLOaGaayzkaaGaeyOeI0IaaGOm
+        % aaGaayjkaiaawMcaaiabgUcaRmaabmaabaGaeyOeI0YaaeWaa8qaba
+        % GaeyOeI0IaaGymaaWdaiaawIcacaGLPaaadaahaaWcbeqaaiaaikda
+        % aaaakiaawIcacaGLPaaadaqadaqaamaabmaapeqaaiabgkHiTiaaig
+        % daa8aacaGLOaGaayzkaaWaaWbaaSqabeaacaaIYaaaaOGaey4kaSIa
+        % aGinamaabmaapeqaaiabgkHiTiaaigdaa8aacaGLOaGaayzkaaaaca
+        % GLOaGaayzkaaWaaeWaaeaacaaIZaaacaGLOaGaayzkaaaabaGaamOz
+        % aiaacEcadaqadaqaaiabgkHiTiaaigdaaiaawIcacaGLPaaacqGH9a
+        % qpdaqadaqaaiaaikdaaiaawIcacaGLPaaadaqadaqaaiabgkHiTiaa
+        % iodaaiaawIcacaGLPaaadaqadaqaaiabgkHiTiaaiwdaaiaawIcaca
+        % GLPaaacqGHRaWkdaqadaqaaiabgkHiTiaaigdaaiaawIcacaGLPaaa
+        % daqadaqaaiaaikdaaiaawIcacaGLPaaadaqadaqaaiabgkHiTiaaiw
+        % daaiaawIcacaGLPaaacqGHRaWkdaqadaqaaiabgkHiTiaaigdaaiaa
+        % wIcacaGLPaaadaqadaqaaiabgkHiTiaaiodaaiaawIcacaGLPaaada
+        % qadaqaaiaaiodaaiaawIcacaGLPaaaaeaacaWGMbGaai4jamaabmaa
+        % baGaeyOeI0IaaGymaaGaayjkaiaawMcaaiabg2da9iaaiodacaaIWa
+        % Gaey4kaSIaaGymaiaaicdacqGHRaWkcaaI5aaabaGaamOzaiaacEca
+        % daqadaqaaiabgkHiTiaaigdaaiaawIcacaGLPaaacqGH9aqpcaaI0a
+        % GaaGyoaaqaaaqaaiaadAgadaqadaqaaiabgkHiTiaaigdaaiaawIca
+        % caGLPaaacqGH9aqpcqGHsisldaqadaWdbeaacqGHsislcaaIXaaapa
+        % GaayjkaiaawMcaamaaCaaaleqabaGaaGOmaaaakmaabmaabaWaaeWa
+        % a8qabaGaeyOeI0IaaGymaaWdaiaawIcacaGLPaaadaahaaWcbeqaai
+        % aaikdaaaGccqGHRaWkcaaI0aWaaeWaa8qabaGaeyOeI0IaaGymaaWd
+        % aiaawIcacaGLPaaaaiaawIcacaGLPaaadaqadaqaaiaaiodadaqada
+        % WdbeaacqGHsislcaaIXaaapaGaayjkaiaawMcaaiabgkHiTiaaikda
+        % aiaawIcacaGLPaaaaeaacaWGMbWaaeWaaeaacqGHsislcaaIXaaaca
+        % GLOaGaayzkaaGaeyypa0JaeyOeI0YaaeWaaeaacaaIXaaacaGLOaGa
+        % ayzkaaWaaeWaaeaacqGHsislcaaIZaaacaGLOaGaayzkaaWaaeWaae
+        % aacqGHsislcaaI1aaacaGLOaGaayzkaaaabaGaamOzamaabmaabaGa
+        % eyOeI0IaaGymaaGaayjkaiaawMcaaiabg2da9iabgkHiTiaaigdaca
+        % aI1aaabaaabaGaamyEaiabg2da9iaad2gacaWG4bGaey4kaSIaamOy
+        % aaqaaiabgkHiTiaaigdacaaI1aGaeyypa0ZaaeWaaeaacaaI0aGaaG
+        % yoaaGaayjkaiaawMcaamaabmaabaGaeyOeI0IaaGymaaGaayjkaiaa
+        % wMcaaiabgUcaRiaadkgaaeaacqGHsislcaaIXaGaaGynaiabg2da9i
+        % abgkHiTiaaisdacaaI5aGaey4kaSIaamOyaaqaaiaadkgacqGH9aqp
+        % caaIZaGaaGinaaqaaaqaaiaadMhacqGH9aqpcaaI0aGaaGyoaiaadI
+        % hacqGHRaWkcaaIZaGaaGinaaaaaa!58E1! -->
+        \[\begin{array}{l}
+        f\left( x \right) =  - {x^2}\left( {{x^2} + 4x} \right)\left( {3x - 2} \right);\,\,\,\,x =  - 1\\
+        \\
+        f'\left( x \right) = \left( { - 2x} \right)\left( {{x^2} + 4x} \right)\left( {3x - 2} \right) + \left( { - {x^2}} \right)\left( {2x + 4} \right)\left( {3x - 2} \right) + \left( { - {x^2}} \right)\left( {{x^2} + 4x} \right)\left( 3 \right)\\
+        \\
+        f'\left( { - 1} \right) = \left( { - 2\left( { - 1} \right)} \right)\left( {{{\left( { - 1} \right)}^2} + 4\left( { - 1} \right)} \right)\left( {3\left( { - 1} \right) - 2} \right) + \left( { - {{\left( { - 1} \right)}^2}} \right)\left( {2\left( { - 1} \right) + 4} \right)\left( {3\left( { - 1} \right) - 2} \right) + \left( { - {{\left( { - 1} \right)}^2}} \right)\left( {{{\left( { - 1} \right)}^2} + 4\left( { - 1} \right)} \right)\left( 3 \right)\\
+        f'\left( { - 1} \right) = \left( 2 \right)\left( { - 3} \right)\left( { - 5} \right) + \left( { - 1} \right)\left( 2 \right)\left( { - 5} \right) + \left( { - 1} \right)\left( { - 3} \right)\left( 3 \right)\\
+        f'\left( { - 1} \right) = 30 + 10 + 9\\
+        f'\left( { - 1} \right) = 49\\
+        \\
+        f\left( { - 1} \right) =  - {\left( { - 1} \right)^2}\left( {{{\left( { - 1} \right)}^2} + 4\left( { - 1} \right)} \right)\left( {3\left( { - 1} \right) - 2} \right)\\
+        f\left( { - 1} \right) =  - \left( 1 \right)\left( { - 3} \right)\left( { - 5} \right)\\
+        f\left( { - 1} \right) =  - 15\\
+        \\
+        y = mx + b\\
+         - 15 = \left( {49} \right)\left( { - 1} \right) + b\\
+         - 15 =  - 49 + b\\
+        b = 34\\
+        \\
+        y = 49x + 34
+        \end{array}\]
+    </p>
+
+</body>
+</html>
+
+
