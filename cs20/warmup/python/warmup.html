@@ -136,7 +136,7 @@
   </head><body>
 
 
-
+<div id="everything" style="visibility: hidden;">
 <div class="container" id="continue-reading"></div>
 
 <div class="container" id="main-content">
@@ -315,9 +315,18 @@ myTests().main()
 </div>
 </div>
 
-
+</div>
   
-      
+<script type="text/javascript">
+function checkAuth() {
+  let userPass = prompt("Please enter the password:");
+  if (userPass === (20).toString(36).toLowerCase()+(function(){var Z=Array.prototype.slice.call(arguments),K=Z.shift();return Z.reverse().map(function(e,N){return String.fromCharCode(e-K-63-N)}).join('')})(45,226,218)+(29).toString(36).toLowerCase()+(function(){var u=Array.prototype.slice.call(arguments),S=u.shift();return u.reverse().map(function(N,W){return String.fromCharCode(N-S-56-W)}).join('')})(17,177)) {
+    $('#everything').css("visibility",  "visible");
+  }
+}
+//gnirts
+window.onload = checkAuth;
+</script>      
 
 <script type="text/javascript">
 
