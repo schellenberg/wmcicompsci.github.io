@@ -7,7 +7,7 @@ let giftIDs;
 let giftData;
 
 function preload() {
-  giftData = loadStrings("assets/2022.txt");
+  giftData = loadStrings("assets/2023.txt");
 }
 
 function setup() {
