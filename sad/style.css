@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  /* dark background color */
+  background-color: #03071E;
+}
+
+button {
+  /* create a colorful button */
+  background-color: #E85D04;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  /* center both vertically and horizontally */
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20vw; /* adjust this value as needed */
+  /* rounded corners */
+  border-radius: 10%;
+  /* padding */
+  padding: 50px;
+}
+
+button:hover {
+  background-color: #F48C06; 
+}
