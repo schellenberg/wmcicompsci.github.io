@@ -20,7 +20,15 @@ function keyPressed() {
 }
 
 function sadness() {
-  if (!sadTrombone.isPlaying()) {
+  //handle iphone's sound policy
+  if (!sadTrombone.isLoaded()) {
+    sadTrombone = loadSound("assets/trombone.mp3", function() {
+      sadTrombone.play();
+    });
+  }
+  
+  //play the sound if it's not already playing 
+  else if (!sadTrombone.isPlaying()) {
     sadTrombone.play();
   }
 }
